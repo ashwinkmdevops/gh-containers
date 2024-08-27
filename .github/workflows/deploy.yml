@@ -11,6 +11,10 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
+    container: node:16
+    # container:
+    #   image: node:16
+    #   env: #Any Environment variable required by the container
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: github-action-1.gtlmo.mongodb.net
